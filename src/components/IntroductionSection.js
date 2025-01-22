@@ -6,7 +6,7 @@ const IntroductionSection = () => {
   return (
     <section
       id="introduction"
-      className="text-black h-max sm:h-max flex items-center justify-center p-6 sm:p-10"
+      className="text-black h-max sm:h-screen flex items-center justify-center p-6 sm:p-10"
       style={{
         backgroundImage: `url(${bg_pic})`,
         backgroundSize: 'cover',
