@@ -1,6 +1,34 @@
-import React from 'react';
-
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
 const ContactSection = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+  
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID, // Service ID from .env
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // Template ID from .env
+        form.current, // Form reference
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY // Public key from .env
+      )
+      .then(
+        (result) => {
+          console.log("Message sent: ", result.text);
+          alert("Message sent successfully!");
+          form.current.reset();
+        },
+        (error) => {
+          console.error("Error: ", error.text);
+          alert("Failed to send message. Please try again.");
+        }
+      );
+  
+    e.target.reset(); // Reset form fields after submission
+  };
+
   return (
     <section id="contact" className="bg-[#0d1b2a] h-max sm:h-max flex items-center justify-center py-12 px-6">
       <div className="container mx-auto">
@@ -13,17 +41,57 @@ const ContactSection = () => {
           <div className="flex justify-center items-center text-center">
           <ul className="space-y-4 text-gray-900 text-lg">
             <li>
-              <span className="font-medium text-gray-700">Email: </span>
+              <span className=" text-gray-700 font-bold">Email: </span>
               siddharth2013tenacian@gmail.com / siddharthmanna@icloud.com
             </li>
             
             <li>
-              <span className="font-medium text-gray-700">Phone: </span>
+              <span className=" text-gray-700 font-bold">Phone: </span>
               +91 98833 53056 / +91 89458 12689
             </li>
             
           </ul>
           </div>
+          <div className="max-w-xl mx-auto bg-yellow-100 rounded-lg hover:shadow-2xl p-6 mt-6">
+          <form ref={form} onSubmit={sendEmail} className="space-y-4">
+            <div>
+              <label className="block text-gray-700 font-medium">Name</label>
+              <input
+                type="text"
+                name="name"
+                required
+                className="w-full border border-gray-300 rounded-lg p-2"
+              />
+            </div>
+            <div>
+              <label className="block text-gray-700 font-medium">Email</label>
+              <input
+                type="email"
+                name="email"
+                required
+                className="w-full border border-gray-300 rounded-lg p-2"
+              />
+            </div>
+            <div>
+              <label className="block text-gray-700 font-medium">Message</label>
+              <textarea
+                name="message"
+                rows="4"
+                required
+                className="w-full border border-gray-300 rounded-lg p-2"
+              ></textarea>
+            </div>
+            <div className="flex justify-center items-center">
+            <button
+              type="submit"
+              className="w-40 bg-yellow-500 text-black py-2 rounded-xl hover:bg-yellow-900 transition"
+            >
+              Send Message
+            </button>
+            </div>
+            
+          </form>
+        </div>
 
           <div className="mt-6 space-x-4 flex justify-center items-center gap-1">
 
@@ -68,6 +136,8 @@ const ContactSection = () => {
           </a>
 
         </div>
+
+        
         </div>
       </div>
     </section>
