@@ -13,7 +13,7 @@ const AboutSection = () => {
         
         <h2 className="text-4xl md:text-6xl font-bold mb-8">About Me</h2>
 
-        <p className="text-xl md:text-2xl mb-8">
+        <p className=" text-lg sm:text-xl md:text-2xl px-4 sm:px-8 md:px-12">
         I’m Siddharth Manna, a final-year student at Sikkim Manipal Institute of Technology, pursuing a B.Tech in Computer Science Engineering. I’m passionate about web development and enjoy building creative solutions using technologies like React, Angular, and Tailwind CSS. I also have an interest in machine learning and have worked on projects related to Nepali Sign Language recognition. Apart from technology, I enjoy playing cricket, football, and chess, as well as reading books to explore new ideas.
         </p>
 
@@ -53,7 +53,7 @@ const AboutSection = () => {
         </div>
 
         <div className="text-2xl my-6">
-          Want to know more about me? Check out my 👉 <a href="https://drive.google.com/file/d/1NZajxjIgtTV1lx-tAOKaU_4fe6YuqqQF/view?usp=drivesdk" target="_blank" className="hover:text-blue-800 underline">Resume (CV)</a> 👈 
+          Want to know more about me? Check out my <a href="https://drive.google.com/file/d/1NZajxjIgtTV1lx-tAOKaU_4fe6YuqqQF/view?usp=drivesdk" target="_blank" className="hover:text-blue-800 underline">Resume (CV)</a> 
         </div>
         
         

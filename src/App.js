@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import IntroductionSection from './components/IntroductionSection';
 import AboutSection from './components/AboutSection';
 import ProjectSection from './components/ProjectSection';
+import WorkshopSection from './components/WorkshopSection';
 import SkillsSection from './components/SkillsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer'
@@ -17,6 +18,7 @@ function App() {
       <IntroductionSection />
       <AboutSection />
       <ProjectSection />
+      <WorkshopSection />
       <SkillsSection />
       <ContactSection />
       <Footer />
