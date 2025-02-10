@@ -2,7 +2,6 @@ import React from 'react';
 
 const Footer = () => {
   const currentDate = new Date();
-  const formattedDate = `${currentDate.getDate()} ${currentDate.toLocaleString('default', { month: 'long' })}, ${currentDate.getFullYear()}`;
 
   return (
     <footer className="bg-gray-800 text-white py-6">
@@ -11,7 +10,7 @@ const Footer = () => {
           Designed and Developed by <span className="font-bold">Siddharth Manna</span>
         </p>
         <p className="mt-4 text-sm">
-          Last updated: {formattedDate}
+          Last Updated: 10th February, 2025. 
         </p>
         <p className="mt-4 text-sm">
           © {currentDate.getFullYear()} Siddharth Manna. All Rights Reserved.

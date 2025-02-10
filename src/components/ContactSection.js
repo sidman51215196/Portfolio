@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import SendIcon from '@mui/icons-material/Send';
 const ContactSection = () => {
 
   const form = useRef();
@@ -38,21 +39,25 @@ const ContactSection = () => {
         </p>
 
         <div className="max-w-3xl mx-auto bg-yellow-100 rounded-lg shadow-lg p-8 hover:bg-yellow-200 transform transition-transform duration-300 hover:scale-105">
-          <div className="flex justify-center items-center text-center">
+          <div className="flex flex-col justify-center items-center text-center">
+          <p className="text-xl mb-3 font-semibold">Reach out to me via:</p>
           <ul className="space-y-4 text-gray-900 text-lg">
             <li>
-              <span className=" text-gray-700 font-bold">Email: </span>
+              <span className=" text-gray-700 font-bold">Email : </span>
               siddharth2013tenacian@gmail.com / siddharthmanna@icloud.com
             </li>
             
             <li>
-              <span className=" text-gray-700 font-bold">Phone: </span>
-              +91 98833 53056 / +91 89458 12689
+              <span className=" text-gray-700 font-bold ">
+                Phone :
+              </span>
+               +91-98833-53056 / +91-89458-12689
             </li>
             
           </ul>
           </div>
-          <div className="max-w-xl mx-auto bg-yellow-100 rounded-lg hover:shadow-2xl p-6 mt-6">
+          <div className=" max-w-xl mx-auto bg-yellow-100 rounded-lg shadow-2xl p-6 mt-6 ">
+            <p className="flex flex-col justify-center text-center mb-3 text-xl font-semibold">Or send a quick message</p>
           <form ref={form} onSubmit={sendEmail} className="space-y-4">
             <div>
               <label className="block text-gray-700 font-medium">Name</label>
@@ -82,18 +87,20 @@ const ContactSection = () => {
               ></textarea>
             </div>
             <div className="flex justify-center items-center">
-            <button
-              type="submit"
-              className="w-40 bg-yellow-500 text-black py-2 rounded-xl hover:bg-yellow-900 transition"
-            >
-              Send Message
-            </button>
+              <button
+                type="submit"
+                className="w-40 bg-yellow-400 text-black py-2 rounded-xl hover:bg-yellow-500 transition flex items-center justify-center gap-2">
+                <span className="text-lg">Send</span>
+                <SendIcon className="w-5 h-5" />
+              </button>
             </div>
+
             
           </form>
-        </div>
+          </div>
 
           <div className="mt-6 space-x-4 flex justify-center items-center gap-1">
+          <p className="text-xl font-semibold">Connect me via Social Media :</p>
 
           <a 
           href="https://www.linkedin.com/in/siddharth-manna-2350271b3/"  // LinkedIn 
@@ -135,9 +142,7 @@ const ContactSection = () => {
           <path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"/></svg>
           </a>
 
-        </div>
-
-        
+          </div>
         </div>
       </div>
     </section>
