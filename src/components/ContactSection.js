@@ -101,9 +101,10 @@ const ContactSection = () => {
           </form>
           </div>
 
+          <div className="flex justify-center items-center text-center text-lg font-semibold mt-5">
+            Connect me through my Social Media:
+          </div>
           <div className="mt-6 space-x-4 flex justify-center items-center gap-1">
-          <p className="text-xl font-semibold">Connect me via Social Media :</p>
-
           <Tooltip title="LinkedIn" arrow>
           <a 
           href="https://www.linkedin.com/in/siddharth-manna-2350271b3/"  // LinkedIn 

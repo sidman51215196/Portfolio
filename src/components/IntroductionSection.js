@@ -25,7 +25,7 @@ const IntroductionSection = () => {
           Hi there, I'm Siddharth Manna
         </h1>
 
-        <p className="mt-4 text-lg sm:text-xl md:text-2xl px-4 sm:px-8 md:px-12">
+        <p className="mt-4 text-sm sm:text-xl md:text-2xl px-4 sm:px-8 md:px-12">
           An enthusiastic programmer 🤓 with an insatiable appetite for learning.{' '}
           <br />
           <br />

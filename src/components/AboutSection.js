@@ -17,8 +17,14 @@ const AboutSection = () => {
           About Me
         </h2>
 
-        <p className=" text-lg sm:text-xl md:text-2xl px-4 sm:px-8 md:px-12">
-        I’m Siddharth Manna, a final-year student at Sikkim Manipal Institute of Technology, pursuing a B.Tech in Computer Science Engineering. I’m passionate about web development and enjoy building creative solutions using technologies like React, Angular, and Tailwind CSS. I also have an interest in machine learning and have worked on projects related to Nepali Sign Language recognition. Apart from technology, I enjoy playing cricket, football, and chess, as well as reading books to explore new ideas.
+        <p className=" text-sm sm:text-xl md:text-2xl px-4 sm:px-8 md:px-12">
+        I’m Siddharth Manna, a final-year student at Sikkim Manipal Institute of Technology, pursuing a B.Tech in Computer Science Engineering. 
+        <br />
+        I’m passionate about web development and enjoy building creative solutions using technologies like React, Angular, and Tailwind CSS. 
+        <br />
+        I also have an interest in machine learning and have worked on projects related to Nepali Sign Language recognition. 
+        <br />
+        Apart from technology, I enjoy playing cricket, football, and chess, as well as reading books to explore new ideas.
         </p>
 
         <h2 className="text-3xl md:text-4xl font-bold mb-8 mt-8 flex items-center justify-center">
@@ -60,8 +66,8 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="text-2xl my-6">
-          Want to know more about me? <a href="https://drive.google.com/file/d/1NZajxjIgtTV1lx-tAOKaU_4fe6YuqqQF/view?usp=drivesdk" target="_blank" className="hover:text-blue-800 underline">Click here to view my Resume (CV)</a> 
+        <div className="text-lg my-6">
+          Want to know more about me? <a href="https://drive.google.com/file/d/1oE4rMOHx5UwUlMEXnSqQjMdJO2uxUJle/view?usp=sharing" target="_blank" className="hover:text-blue-800 underline">Click here to view my Resume (CV)</a> 
         </div>
         
         

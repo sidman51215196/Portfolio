@@ -3,10 +3,10 @@ import React from 'react';
 const ProjectSection = () => {
   const projects = [
     {
-      title: 'Trainee in Software Engineer at Alumnus Software Ltd.',
-      description1:'• Gained practical experience in software engineering, working on real-world projects.',
+      title: 'Trainee in Software Engineer at Alumnus Software Limited',
+      description1:'• Gained practical experience in software engineering and working on real-world projects.',
       description2:'• Learned and applied industry-standard tools, frameworks, and coding best practices. ',
-      description3:'• Worked alongside professionals, enhancing problem-solving and software development skills.',
+      description3:'• Worked alongside professionals which enhanced problem-solving and software development skills.',
       techStack: ['React','Node.js','PostgreSQL'],
       date:'Duration: February, 2025 to Present',
       certificateLink:'',

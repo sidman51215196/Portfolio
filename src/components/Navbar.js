@@ -28,7 +28,7 @@ const Navbar = () => {
           } transition-transform duration-300 ease-in-out md:static md:transform-none md:flex md:flex-row md:space-x-10 md:bg-transparent md:justify-end`}
           style={{ zIndex: 15 }} // this is to ensure menu is below the button
         >
-          <li className="text-xl md:text-2xl mb-6 md:mb-0 transform hover:scale-110 transition duration-300">
+          <li className="text-lg md:text-2xl mb-6 md:mb-0 transform hover:scale-110 transition duration-300">
             <a
               href="#about"
               className="hover:text-yellow-400 "
@@ -37,7 +37,7 @@ const Navbar = () => {
               About
             </a>
           </li>
-          <li className="text-xl md:text-2xl mb-6 md:mb-0 transform hover:scale-110 transition duration-300">
+          <li className="text-lg md:text-2xl mb-6 md:mb-0 transform hover:scale-110 transition duration-300">
             <a
               href="#projects"
               className="hover:text-yellow-400"
@@ -46,7 +46,7 @@ const Navbar = () => {
               Experience 
             </a>
           </li>
-          <li className="text-xl md:text-2xl mb-6 md:mb-0 transform hover:scale-110 transition duration-300">
+          <li className="text-lg md:text-2xl mb-6 md:mb-0 transform hover:scale-110 transition duration-300">
             <a
               href="#workshops"
               className="hover:text-yellow-400"
@@ -55,7 +55,7 @@ const Navbar = () => {
               Workshops 
             </a>
           </li>
-          <li className="text-xl md:text-2xl mb-6 md:mb-0 transform hover:scale-110 transition duration-300">
+          <li className="text-lg md:text-2xl mb-6 md:mb-0 transform hover:scale-110 transition duration-300">
             <a
               href="#skills"
               className="hover:text-yellow-400"
@@ -64,7 +64,7 @@ const Navbar = () => {
               Skills
             </a>
           </li>
-          <li className="text-xl md:text-2xl mb-6 md:mb-0 transform hover:scale-110 transition duration-300">
+          <li className="text-lg md:text-2xl mb-6 md:mb-0 transform hover:scale-110 transition duration-300">
             <a
               href="#contact"
               className="hover:text-yellow-400"
