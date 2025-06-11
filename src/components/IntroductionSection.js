@@ -6,7 +6,7 @@ const IntroductionSection = () => {
   return (
     <section
       id="introduction"
-      className="text-black h-max sm:h-screen flex items-center justify-center p-6 sm:p-10"
+      className="text-black h-max sm:min-h-screen flex items-center justify-center p-9 sm:p-10"
       style={{
         backgroundImage: `url(${bg_pic})`,
         backgroundSize: 'cover',
@@ -28,9 +28,8 @@ const IntroductionSection = () => {
         <p className="mt-4 text-lg sm:text-xl md:text-2xl px-4 sm:px-8 md:px-12">
           An enthusiastic programmer 🤓 with an insatiable appetite for learning.{' '}
           <br />
-          <br />
+          
           Challenges fuel my passion, and I thrive on pushing my limits to achieve new heights.
-          <br />
           <br />
           Whether it's coding or exploring new horizons, I'm always eager to embrace the
           opportunities that come my way.

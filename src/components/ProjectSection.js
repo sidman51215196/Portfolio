@@ -7,14 +7,14 @@ const ProjectSection = () => {
       description1:'• Gained practical experience in software engineering, working on real-world projects.',
       description2:'• Learned and applied industry-standard tools, frameworks, and coding best practices. ',
       description3:'• Worked alongside professionals, enhancing problem-solving and software development skills.',
-      techStack: ['React','Node.js','PostgreSQL'],
-      date:'Duration: February, 2025 to Present',
-      certificateLink:'',
+      techStack: ['MERN', 'Postman', 'JWT', 'Git'],
+      date:'Duration: February, 2025 to May, 2025',
+      certificateLink:'https://drive.google.com/file/d/15aANpszTjTD-jrPM_hmrYx980x2I3W3F/view?usp=sharing',
     },
     {
-      title: 'Ex-Defense Personnel Management System at National Informatics Center',
+      title: 'Full Stack Web Developer at National Informatics Center',
       description1:
-        '• Developed a system to manage ex-defense personnel data efficiently for the Rajya Sainik Board, Gangtok.',
+        '• Developed a system "Ex-Defense Personnel Management System" to manage ex-defense personnel data efficiently for the Rajya Sainik Board, Gangtok.',
       description2:
         '•  Designed and implemented a responsive user interface for seamless user experience.',
       description3: '• Utilised Angular for the front-end and Django for the back-end.',
@@ -34,7 +34,7 @@ const ProjectSection = () => {
       certificateLink:'',
     },
     {
-      title: 'Khangchendzonga State University Website Development',
+      title: 'Frontend Web Developer at Khangchendzonga State University Website Development',
       description1:
         "• Designed and developed the front-end for Khangchendzonga State University's website using React and Tailwind CSS.",
       description2:'• Ensured cross-browser compatibility and improved loading speed.',

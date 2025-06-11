@@ -34,7 +34,7 @@ const Navbar = () => {
               className="hover:text-yellow-400 "
               onClick={() => setIsMenuOpen(false)}
             >
-              About
+              About 
             </a>
           </li>
           <li className="text-xl md:text-2xl mb-6 md:mb-0 transform hover:scale-110 transition duration-300">
@@ -43,7 +43,7 @@ const Navbar = () => {
               className="hover:text-yellow-400"
               onClick={() => setIsMenuOpen(false)}
             >
-              Experience 
+              Experiences
             </a>
           </li>
           <li className="text-xl md:text-2xl mb-6 md:mb-0 transform hover:scale-110 transition duration-300">

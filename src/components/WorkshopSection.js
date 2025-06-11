@@ -3,6 +3,15 @@ import React from 'react';
 const WorkshopSection = () => {
   const workshops = [
         {
+        title: 'One Day Workshop on Mern Stack Development',
+        description1:'• Gained insights into MERN stack development and its applications.',
+        description2:'• Learned about MongoDB, Express.js, React, and Node.js for full-stack development.',
+        description3:'• Engaged in hands-on projects to enhance practical skills in web development.',
+        instructors: ['Desun Technology Pvt Ltd. (Kolkata)'],
+        date:'Date of Completion: 23rd October, 2024',
+        certificateLink:'https://drive.google.com/file/d/1btbhjDHcbXmvaWXYIQ4D0Ww7A4M0buNH/view?usp=sharing',
+        },
+        {
         title: 'The Complete Java Script Course : From Zero to Expert',
         description1:'• Learned variables, functions, objects, and ES6+ concepts for modern development.',
         description2:'• Gained expertise in promises, async/await, and API handling.',
@@ -72,7 +81,7 @@ const WorkshopSection = () => {
               <p className="text-sm sm:text-base text-gray-700 mb-2">{project.description2}</p>
               <p className="text-sm sm:text-base text-gray-700 mb-2">{project.description3}</p>
               <div className="mb-4">
-                <h4 className="font-semibold">Instructors:</h4>
+                <h4 className="font-semibold">Instructors/Institute:</h4>
                 <ul className="list-disc list-inside">
                   {project.instructors.map((tech, i) => (
                     <li key={i} className="text-gray-600 text-sm sm:text-base">
