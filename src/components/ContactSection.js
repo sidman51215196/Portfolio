@@ -5,6 +5,7 @@ import { useRef, useState } from "react";
 
 const ContactSection = () => {
   const form = useRef();
+  
   const [showToast, setShowToast] = useState(false);
   const [showErrorToast, setShowErrorToast] = useState(false);
 
@@ -181,7 +182,7 @@ const ContactSection = () => {
       </div>
       {showToast && (
         <div className="fixed bottom-5 right-5 bg-green-700 text-white px-6 py-3 rounded-xl shadow-lg transition-all duration-300 animate-bounce">
-          Message sent successfully!
+          Message sent successfully! 
         </div>
       )}
       {showErrorToast && (
