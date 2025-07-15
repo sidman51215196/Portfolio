@@ -5,11 +5,13 @@ import { useRef, useState } from "react";
 
 const ContactSection = () => {
   const form = useRef();
-  
+
   const [showToast, setShowToast] = useState(false);
   const [showErrorToast, setShowErrorToast] = useState(false);
+  const [isWaiting, setIsWaiting] = useState(false);
 
   const sendEmail = (e) => {
+    setIsWaiting(true);
     e.preventDefault();
 
     emailjs
@@ -33,7 +35,18 @@ const ContactSection = () => {
         }
       );
 
+    setTimeout(() => {
+      setIsWaiting(false);
+    }, 10000);
+
     e.target.reset();
+  };
+
+  const handleClick = () => {
+    setIsWaiting(true);
+    setTimeout(() => {
+      setIsWaiting(false);
+    }, 5000);
   };
 
   return (
@@ -99,20 +112,34 @@ const ContactSection = () => {
                 ></textarea>
               </div>
               <div className="flex justify-center items-center">
-                <button
+                {/* <button
                   type="submit"
                   className="w-40 bg-yellow-400 text-black py-2 rounded-xl hover:bg-yellow-500 transition flex items-center justify-center gap-2"
                 >
                   <span className="text-lg">Send</span>
                   <SendIcon className="w-5 h-5" />
+                </button> */}
+                <button
+                  type="submit"
+                  disabled={isWaiting}
+                  className={`w-40 py-2 rounded-xl transition flex items-center justify-center gap-2
+                  ${
+                    isWaiting
+                      ? "bg-gray-400 cursor-not-allowed"
+                      : "bg-yellow-400 hover:bg-yellow-500"
+                  }
+                `}
+                >
+                  <span className="text-lg">
+                    {isWaiting ? "Please Wait..." : "Send"}
+                  </span>
+                  {!isWaiting && <SendIcon className="w-5 h-5" />}
                 </button>
               </div>
             </form>
           </div>
 
           <div className="mt-6 space-x-4 flex justify-center items-center gap-1">
-            
-
             <Tooltip title="LinkedIn" arrow>
               <a
                 href="https://www.linkedin.com/in/siddharth-manna-2350271b3/" // LinkedIn
@@ -182,16 +209,14 @@ const ContactSection = () => {
       </div>
       {showToast && (
         <div className="fixed bottom-5 right-5 bg-green-700 text-white px-6 py-3 rounded-xl shadow-lg transition-all duration-300 animate-bounce">
-          Message sent successfully! 
+          Message sent successfully!
         </div>
       )}
       {showErrorToast && (
         <div className="fixed bottom-5 right-5 bg-red-700 text-white px-6 py-3 rounded-xl shadow-lg transition-all duration-300 animate-bounce">
           Failed to send message, try again
         </div>
-      )
-
-      }
+      )}
     </section>
   );
 };

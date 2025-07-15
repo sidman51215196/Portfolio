@@ -1,23 +1,17 @@
-import React from "react";
-import bg_pic from "../images/bg_pic2.jpg";
 import SchoolIcon from "@mui/icons-material/School";
 
 const AboutSection = () => {
   return (
     <section
       id="about"
-      className="text-black h-max sm:min-h-screen flex items-center justify-center flex-col p-9 "
-      style={{
-        backgroundImage: `url(${bg_pic})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
+      className="text-black h-max sm:min-h-screen flex items-center justify-center flex-col p-9 bg-[#0d1b2a]"
+      
     >
-      <div className=" text-center bg-gradient-to-r from-blue-500 to-red-500 rounded-lg shadow-lg p-6 ">
-        <h2 className="text-4xl md:text-6xl font-bold mb-8">About Me</h2>
+      <h2 className="text-4xl md:text-6xl font-bold mb-8 text-yellow-200">About Me</h2>
 
-        <p className=" text-lg sm:text-xl md:text-2xl px-4 sm:px-8 md:px-12">
+      <div className="text-center bg-yellow-100 rounded-lg shadow-lg p-6 ">
+
+        <p className=" text-base sm:text-xl md:text-2xl px-4 sm:px-8 md:px-12">
           I’m Siddharth Manna, a final-year student at Sikkim Manipal Institute
           of Technology, pursuing a B.Tech in Computer Science Engineering. I’m
           passionate about web development and enjoy building creative solutions
@@ -28,13 +22,13 @@ const AboutSection = () => {
           explore new ideas.
         </p>
 
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 mt-8 flex items-center justify-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 mt-8 flex items-center justify-center underline">
           Education
           <SchoolIcon fontSize="large" className="text-black ml-1" />
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-blue-200 bg-opacity-50 rounded-lg shadow-lg p-1 transform transition-transform duration-300 hover:scale-105">
+          <div className="bg-yellow-400 bg-opacity-50 rounded-lg shadow-2xl p-1 transform transition-transform duration-300 hover:scale-105">
             <h3 className="text-2xl font-semibold mb-4 border-b-2 border-blue-500 pb-2">
               Class X
             </h3>
@@ -50,7 +44,7 @@ const AboutSection = () => {
             </ul>
           </div>
 
-          <div className="bg-green-100	 bg-opacity-25 rounded-lg shadow-lg p-1 transform transition-transform duration-300 hover:scale-105">
+          <div className="bg-yellow-400 bg-opacity-50 rounded-lg shadow-2xl p-1 transform transition-transform duration-300 hover:scale-105">
             <h3 className="text-2xl font-semibold mb-4 border-b-2 border-blue-500 pb-2">
               Class XII
             </h3>
@@ -64,9 +58,9 @@ const AboutSection = () => {
             </ul>
           </div>
 
-          <div className="bg-red-200 bg-opacity-50 rounded-lg shadow-lg p-1 transform transition-transform duration-300 hover:scale-105">
+          <div className="bg-yellow-400 bg-opacity-50 rounded-lg shadow-2xl p-1 transform transition-transform duration-300 hover:scale-105">
             <h3 className="text-2xl font-semibold mb-4 border-b-2 border-blue-500 pb-2">
-              B. Tech. (Computer Science and Engineering)
+              B. Tech. (CSE)
             </h3>
             <ul className="list-none text-center">
               <li className="mb-1">
