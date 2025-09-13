@@ -208,12 +208,12 @@ const ContactSection = () => {
         </div>
       </div>
       {showToast && (
-        <div className="fixed bottom-5 right-5 bg-green-700 text-white px-6 py-3 rounded-xl shadow-lg transition-all duration-300 animate-bounce">
+        <div className="fixed bottom-20 left-5 bg-green-700 text-white px-6 py-3 rounded-xl shadow-lg transition-all duration-300 animate-bounce">
           Message sent successfully!
         </div>
       )}
       {showErrorToast && (
-        <div className="fixed bottom-5 right-5 bg-red-700 text-white px-6 py-3 rounded-xl shadow-lg transition-all duration-300 animate-bounce">
+        <div className="fixed bottom-20 left-5 bg-red-700 text-white px-6 py-3 rounded-xl shadow-lg transition-all duration-300 animate-bounce">
           Failed to send message, try again
         </div>
       )}
