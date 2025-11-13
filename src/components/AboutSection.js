@@ -79,7 +79,7 @@ const AboutSection = () => {
             Want to know more about me?
           </h2>
           <a
-            href="https://drive.google.com/file/d/1cMRuzBXGYoq-RNSBhuj1lVjCkd3MLw_n/view?usp=sharing"
+            href="https://drive.google.com/file/d/1LGw5vcAZ_uGT5FDAhzH6JzyGwRJaiw7e/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-blue-600 text-white font-medium text-lg rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
