@@ -10,7 +10,7 @@ const Footer = () => {
           Designed and Developed by <span className="font-bold">Siddharth Manna</span>
         </p>
         <p className="mt-4 text-sm">
-          Last Updated: 10th February, 2025. 
+          Last Updated: 13th November, 2025. 
         </p>
         <p className="mt-4 text-sm">
           © {currentDate.getFullYear()} Siddharth Manna. All Rights Reserved.

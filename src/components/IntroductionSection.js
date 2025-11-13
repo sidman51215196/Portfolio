@@ -1,4 +1,4 @@
-import profilePic from "../images/profile_pic.jpg";
+import profilePic from "../images/profile_pic.jpeg";
 import Tooltip from "@mui/material/Tooltip";
 
 const IntroductionSection = () => {
@@ -19,7 +19,7 @@ const IntroductionSection = () => {
         </h1>
 
         <p className="mt-4 text-lg sm:text-xl md:text-2xl px-4 sm:px-8 md:px-12">
-          An enthusiastic programmer 🤓 with an insatiable appetite for
+          An enthusiastic programmer with an insatiable appetite for
           learning. <br />
           Challenges fuel my passion, and I thrive on pushing my limits to
           achieve new heights.

@@ -23,17 +23,6 @@ const ProjectSection = () => {
       certificateLink:'https://drive.google.com/file/d/13SozAqVrPiL7kyO8Pr1e_7F_wkxXhCBX/view?usp=sharing',
     },
     {
-      title: 'Performance Analysis of ML Models for Nepali Sign Language (NSL) Gesture Recognition',
-      description1:
-        '• This is a mini project done from Sikkim Manipal Institute of Technology.',
-      description2:
-        '• Evaluates NSL consonant accuracy using CNN (SSD MobileNet) and LSTM, detailing training, testing, and challenges.',
-      description3:'• The project Aims to enhance NSL recognition for improved accessibility.',
-      techStack: ['Python', 'TensorFlow', 'Keras'],
-      date: 'Duration: January, 2024 to April, 2024',
-      certificateLink:'',
-    },
-    {
       title: 'Frontend Web Developer at Khangchendzonga State University Website Development',
       description1:
         "• Designed and developed the front-end for Khangchendzonga State University's website using React and Tailwind CSS.",
@@ -61,7 +50,7 @@ const ProjectSection = () => {
     >
       <div className="container mx-auto">
         <h2 className="text-3xl sm:text-xl md:text-6xl font-bold text-center mb-8 sm:mb-12 text-yellow-200">
-          Internships and Projects
+          Internships
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
